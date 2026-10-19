@@ -1,6 +1,6 @@
 # Proof Controller license server
 
-Issues Proof Controller license keys, binds them to installs, and returns signed license tokens. Installed controllers (`proofcontroller/open`) verify those tokens offline with the public key shipped in their package, so the controller keeps running if this server is down.
+Issues Proof Controller license keys, binds them to installs, and returns signed license tokens. Installed controllers (`proofcontroller/proofcontroller`) verify those tokens offline with the public key shipped in their package, so the controller keeps running if this server is down.
 
 Runs at `https://license.proofcontroller.com`. The controller's default `PROOF_CONTROLLER_LICENSE_SERVER` already points there.
 
@@ -25,7 +25,7 @@ v1.<base64url(JSON claims, sorted keys)>.<base64url(Ed25519 signature over "v1.<
 
 Claims: `iss`, `kid`, `lic`, `install_id`, `fingerprint`, `tier` (free, pro, max, gov), `seats`, `licensed_to`, `issued_at`, `expires_at` (null = never), `refresh_by` (null for free, gov, and offline files; now + 7 days for pro and max), `offline`.
 
-`tests/test_server.py` holds the reference verifier. Change the format only together with `proof_controller/licensing.py` in `proofcontroller/open`.
+`tests/test_server.py` holds the reference verifier. Change the format only together with `proof_controller/licensing.py` in `proofcontroller/proofcontroller`.
 
 ## Develop
 
@@ -84,7 +84,7 @@ sudo -u prooflic PROOF_LICENSE_DATA_DIR=/var/lib/proof-license /opt/proof-licens
 
 It prints the public key. Then:
 
-- Commit that public key to `proofcontroller/open` as `proof_controller/license_pubkey.pem`. Every controller build ships it and verifies tokens with it. Until it is committed, activation answers `503 License public key is not installed in this build`.
+- Commit that public key to `proofcontroller/proofcontroller` as `proof_controller/license_pubkey.pem`. Every controller build ships it and verifies tokens with it. Until it is committed, activation answers `503 License public key is not installed in this build`.
 - Back up `/var/lib/proof-license/signing_key.pem` somewhere offline (encrypted USB, password manager). If it is lost, every installed controller must be rebuilt with a new public key. If it leaks, anyone can mint licenses.
 
 ## 4. Start

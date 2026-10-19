@@ -20,4 +20,4 @@ All notable changes to this repository are recorded here.
 - EC2 t3.micro + Caddy deploy files and guide.
 - 14 tests (real key, real registry, reference token verifier).
 
-Moved here from `proofcontroller/open` (`license_server/`), where it was first written.
+Moved here from `proofcontroller/proofcontroller` (`license_server/`), where it was first written.

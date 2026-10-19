@@ -1,7 +1,7 @@
 """License server tests: real Ed25519 key, real SQLite registry.
 
 verify_v1() below is the token contract. The controller's verifier
-(proofcontroller/open, proof_controller/licensing.py) must accept exactly
+(proofcontroller/proofcontroller, proof_controller/licensing.py) must accept exactly
 what this accepts.
 """
 
