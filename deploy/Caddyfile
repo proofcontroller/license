@@ -1,0 +1,5 @@
+# TLS in front of the license server. Caddy gets and renews the
+# Let's Encrypt certificate on its own once DNS points here.
+license.proofcontroller.com {
+	reverse_proxy 127.0.0.1:8443
+}

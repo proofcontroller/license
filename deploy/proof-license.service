@@ -1,0 +1,21 @@
+[Unit]
+Description=Proof Controller license server
+After=network.target
+
+[Service]
+Type=simple
+Environment=PROOF_LICENSE_DATA_DIR=/var/lib/proof-license
+ExecStart=/opt/proof-license/venv/bin/proof-license serve --host 127.0.0.1 --port 8443
+Restart=on-failure
+RestartSec=3
+User=prooflic
+Group=prooflic
+StateDirectory=proof-license
+StateDirectoryMode=0700
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

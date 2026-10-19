@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "repository": "github.com/proofcontroller/license",
+  "human_author": {
+    "name": "Craig Thomas Ellrod",
+    "orcid": "0009-0004-1058-7666"
+  },
+  "entries": [
+    {
+      "date": "2026-10-18",
+      "item": "License server (proof_license/), deploy/, tests/, README",
+      "human_contribution": "Direction, licensing architecture and tier rules from the Proof Controller spec, repo creation, review",
+      "ai_contribution": "Drafting of all code, tests, deploy files and docs; design calls on token format, key format, install limits, rate limit and storage",
+      "ai_tools": [
+        {
+          "vendor": "Anthropic",
+          "model": "claude-opus-5-5"
+        }
+      ]
+    }
+  ],
+  "tracking_tool": null
+}
