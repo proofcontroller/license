@@ -220,7 +220,7 @@ If there is a conflict: (1) a signed Order Form controls over Parts B through D 
 
 ### D10. Entire Agreement and Miscellaneous
 
-This License, together with any Order Form and the documents it references, is the entire agreement on its subject and supersedes all prior licenses Licensor issued for the same Software and Specifications, including the Greater Good License family. All prior versions of the Specifications, including every version previously published under the Greater Good License family or CC BY 4.0, are licensed under the Apache License, Version 2.0, effective as of their original publication date, and Licensor no longer offers them under any prior license. All prior versions of the Software remain proprietary under Part B. If any provision is unenforceable, the rest remains in effect. A waiver must be in writing. Notices to Licensor go to craig@hackerverse.ai.
+This License, together with any Order Form and the documents it references, is the entire agreement on its subject and supersedes all prior licenses Licensor issued for the same Software and Specifications. All prior versions of the Specifications, including every version previously published under any other license, are licensed under the Apache License, Version 2.0, effective as of their original publication date, and Licensor no longer offers them under any prior license. All prior versions of the Software remain proprietary under Part B. If any provision is unenforceable, the rest remains in effect. A waiver must be in writing. Notices to Licensor go to craig@hackerverse.ai.
 
 ### D11. Versions
 
