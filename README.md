@@ -141,7 +141,7 @@ Send `agency.license` out of band. They load it on the License screen or with `P
 
 ## License
 
-Greater Good Commercial License 1.0 (GGL-C), see [LICENSE.md](LICENSE.md). This is the operator's server; it is not part of the open-core controller.
+Proof Protocol License 1.0, see [LICENSE.md](LICENSE.md). This is the operator's server; it is not part of the open-core controller.
 
 ## Author
 
